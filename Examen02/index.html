@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Examen</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="Contenedor1">
+            <div class="ladob">
+                <h2 class="tituloPrincipal">ʀᴇɢɪꜱᴛʀᴏ ᴇꜱᴛᴜᴅɪᴀɴᴛᴇ</h2>
+                <input hidden id="txtId" type="text" class="form-control">
+
+                <div class="D1">
+                    <label for="des1"> Almacen :</label><br>
+                    <select name="select" class="almacen" id="alm">
+                        <option value="0" disabled selected>Seleccionar almacen</option>
+                        <option value="1">Ate</option>
+                        <option value="2">Chosica</option>
+                        <option value="3">La molina</option>
+                    </select><br><br>
+                </div>
+                <div class="D2">
+                    <label for="des1">Categoria :</label><br>
+                    <select name="select" class="categoria" id="cat">
+                        <option value="0" disabled selected>Seleccionar categoria</option>
+                        <option value="1">Lacteos</option>
+                        <option value="2">Lipidos</option>
+                        <option value="3">Detergente</option>
+                    </select><br><br>
+                </div>
+                </div><br>
+                <div class="caja1">
+                    <label class="producto">Producto :</label> <br>
+                    <input id="txtProducto" type="text" class="inputProducto" aria-describedby="emailHelp">
+                </div>
+                <div class="caja1">
+                    <label class="precio">Precio :</label> <br>
+                    <input id="txtPrecio" type="text" class="inputPrecio" aria-describedby="emailHelp">
+                </div>
+                <div class="caja2">
+                    <label class="cantidad">Cantidad :</label> <br>
+                    <input id="txCantidad" type="text" class="inputCantidad" aria-describedby="emailHelp">
+                </div>
+               
+                </div>
+
+                <button type="button" onclick="guardarCambios()" class="guardar" id="Registrar">
+                    Guardar
+                </button>
+
+            </div>
+
+        <div class="Contenedor2">
+            <div class="derecha">
+                <table id="tblPost" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="th1">Almacen</th>
+                            <th scope="col" class="th2">Categoria</th>
+                            <th scope="col" class="th3">Producto</th>
+                            <th scope="col" class="th4">Precio</th>
+                            <th scope="col" class="th5">Cantidad</th>
+                            <th scope="col" class="th6">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyPost">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+  
+
+
+    <script src="js/java.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>
